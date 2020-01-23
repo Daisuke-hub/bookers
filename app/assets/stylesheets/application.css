@@ -13,3 +13,144 @@
  *= require_tree .
  *= require_self
  */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+.headline{
+    margin: 20px;
+}
+
+.column{
+    width: 100%;
+    margin-left: 20px;
+}
+
+.column-headline{
+    text-align: center;
+    font-weight: bold;
+}
+
+td, th{
+    padding: 0 10px;
+}
+
+/* 投稿レイアウト */
+.link{
+    margin: 8px;
+    float:left;
+}
+
+.link-headline{
+    height: 25px;
+}
+
+.link-show{
+    float:left;
+    margin-right: 16px;
+}
+
+.link-edit{
+    float:left;
+    margin-right: 16px;
+}
+
+.link-destroy{
+    float:left;
+    margin-right: 16px;
+}
+
+.new{
+    margin: 20px;
+}
+
+.new-title2{
+    background-color: red;
+    width: 35px;
+}
+
+.new-body2{
+    background-color: red;
+    width: 40px;
+}
+
+.new-textfield{
+    background-color: red;
+    height: 19px;
+    width: 112px;
+}
+
+.new-textarea{
+    background-color: red;
+    height: 29px;
+    width: 120px;
+}
+
+.errorbox{
+    border: 1px solid red;
+    background-color: lightgray;
+    width: 500px;
+    height: 130px;
+    margin: 30px 0;
+}
+
+.errorbox-headline{
+    background-color: red;
+    width: 100%;
+    height: 20px;
+    padding-left: 5px;
+}
+
+.errorbox-headline-text{
+    color: white;
+    font-weight: bold;
+}
+
+.errorbox-message{
+    padding: 30px 0 20px 60px;
+}
+
+/* show */
+
+.success{
+    color: yellowgreen;
+    margin: 50px 0 0 50px;
+}
+
+.show{
+    margin: 0 50px;
+}
+
+.icon{
+    margin-left: 20px;
+}
+
+/* top */
+
+.top-headline{
+    margin: 20px;
+}
+
+.top-body{
+    margin-left: 50px;
+}
+
+/* edit */
+
+.edit{
+    margin: 20px;
+}
+
+/* フォント */
+
+.headline, .top-headline, .column, .new, .show, .success, .icon, .edit{
+    font-family: arial, "arial black", "arial narrow";
+}

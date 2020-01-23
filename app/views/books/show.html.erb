@@ -1,0 +1,18 @@
+<h4 class= "success"><%= flash[:success] %></h4>
+<h4 class= "success"><%= flash[:create] %></h4>
+
+<br>
+<br>
+
+<div class="show">
+    <p><%= "Title: " + @book.title %></p>
+    <br>
+    <br>
+    <p><%= "Body: " + @book.body %></p>
+    <br>
+    <br>
+</div>
+
+<div class="icon">
+    <p><%= link_to "Edit", edit_book_path %>  |  <%= link_to "Back", books_path %></p>
+</div>

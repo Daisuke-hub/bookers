@@ -1,0 +1,45 @@
+<%= form_for(@book) do |f| %>
+    <% if @book.errors.any? %>
+
+        <div class="errorbox">
+            <div class="errorbox-headline">
+                <h4 class="errorbox-headline-text">2 errors prohibited this book from being saved:</h4>
+            </div>
+
+            <div class="errorbox-message">
+                <ul>
+                    <% @book.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+
+        <h4 class="new-title2">Title</h4>
+        <div class= "new-textfield"><%= f.text_field :title %></div>
+        <br>
+
+        <h4 class="new-body2">Body</h4>
+        <div class="new-textarea"><%= f.text_area :body %></div>
+        <br>
+        <br>
+
+        <p　><%= f.submit "Create Box"%></p>
+
+    <% else %>
+
+        <h4 class="new-title">Title</h4>
+        <%= f.text_field :title %>
+        <br>
+        <br>
+
+        <h4 class="new-body">Body</h4>
+        <%= f.text_area :body %>
+        <br>
+        <br>
+
+        <p><%= f.submit "Create Box"%></p>
+
+    <% end %>
+
+<% end %>
